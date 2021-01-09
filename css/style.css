@@ -1,0 +1,356 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Raleway&display=swap');
+
+@font-face {
+      font-family: 'Sanfranciscodisplay';
+      src: url('https://uploads-ssl.webflow.com/5cd12acb6e80bf03baee4f8d/5cd3a4307f1ff8ed6a40f431_SFProDisplay-Regular.ttf') format('truetype');
+      font-weight: 400;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'SF-medium';
+      src: url('/fonts/SF-medium.ttf') format('truetype');
+      font-weight: 500;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'Sanfranciscotext';
+      src: url('https://uploads-ssl.webflow.com/5cd12acb6e80bf03baee4f8d/5cd3933aed4440450d30c9e2_SanFranciscoText-Regular.otf') format('opentype');
+      font-weight: 400;
+      font-style: normal;
+}
+@font-face {
+      font-family: 'Sanfranciscotext';
+      src: url('https://uploads-ssl.webflow.com/5cd12acb6e80bf03baee4f8d/5cd3906aa5ddc9cb761398f3_SanFranciscoText-Medium.otf') format('opentype');
+      font-weight: 500;
+      font-style: normal;
+}
+
+/* Bold */
+
+@font-face {
+font-family: "San Francisco-bold";
+font-weight: 700;
+src: url("/fonts/SFDisplay-Bold.ttf") format('truetype');
+}
+
+* {
+      margin: 0;
+      padding: 0;
+}
+
+body {
+      background: white;
+}
+
+/* Navigation */
+
+nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 10px;
+      padding: 0.5rem calc((80vw - 1000px) / 2);
+      height: 6vh;
+}
+
+.logo img {
+      height: 50px;
+}
+
+.mobile {
+      display: none;
+}
+
+.logo, ul {
+      margin-top: 15px;
+}
+
+nav ul {
+      float: right;
+      list-style: none;
+      display: flex;
+      align-items: center;
+}
+
+nav ul li {
+      display: inline-block;
+      justify-content: center;
+      margin-right: 25px;
+      padding-top: 5px;
+}
+
+nav ul li:last-child {
+      margin-right: 45px;
+}
+
+nav ul li a {
+      display: inline-block;
+      color: #1c1d24;
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'SF-medium';
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      /* font-weight: 500; */
+      font-weight: bolder;
+}
+
+.underline::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: #FFD700;
+      transition: width .3s;
+      margin-top: 2px;
+  }
+  
+  .underline:hover::after {
+      width: 100%;
+      transition: width .3s;
+  }
+
+/* Main/Front Page Stuff */
+
+
+.contained {
+      padding: 0.5rem calc((80vw - 1000px) / 2);
+      padding-bottom: 15vh !important;
+}
+
+.front-page-container {
+      height: 90vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.front-page-container img {
+      width: 35vw;
+}
+
+.intro-words {
+      font-family: "San Francisco-bold";
+      width: 25vw;
+      font-weight: 700;
+      font-size: 3.5vw;
+      position: relative;
+      top: -4.5vh;
+      height: 30vh;
+      border-radius: 10px;
+}
+
+.info {
+      background: white;
+      padding-top: 7.5rem;
+      width: 100%;
+}
+  
+.about-us {
+      /* padding-top: 7.5rem; */
+      text-align: left;
+      width: 50%;
+      /* position: relative;
+      left: 15%; */
+      display: inline-block;
+      padding-bottom: 7.5vh;
+}
+  
+.about-us h1 {
+      text-transform: uppercase;
+      font-family: 'San Francisco-bold';
+      font-size: 4rem !important;
+      margin-bottom: 2%;
+}
+
+.about-us p{
+      line-height: 1.5;
+      font-family: 'SF-medium';
+      font-size: 1.5rem;
+      padding: 2.5vh 0;
+}
+
+.learn h1 {
+      font-family: 'San Francisco-bold';
+      font-size: 4rem !important;
+      color: #872ce7;
+      padding-bottom: 3vh;
+}
+
+.learn h2 {
+      font-family: 'San Francisco-bold';
+      font-size: 2rem !important;
+      padding-bottom: 1.5vh;
+}
+
+.learn p {
+      line-height: 1.5;
+      font-family: 'SF-medium';
+      font-size: 1.5rem;
+      padding: 2.5vh 0;
+}
+
+.learn a {
+      /* font-weight: bold; */
+      text-decoration: none;
+      color: #872ce7;
+}
+
+.tsa-group {
+      width: 100%;
+      /* float: right;
+      width: 45%; */
+      border-radius: 10px;
+      margin-top: 5vh;
+}
+
+.tsa-group-caption {
+      line-height: 1.5;
+      font-family: 'SF-medium';
+      font-size: 1.5rem;
+      padding: 2.5vh 0;
+}
+  
+.pple-container {
+/* padding: 35vh 0 7vh;
+margin-top: -35vh; */
+color: white;
+text-align: center;
+/* display: grid;
+grid-template-columns: repeat(4, 1fr); */
+      /* grid-gap: 2.5em; */
+background: linear-gradient(to bottom right,  rgba(165,134,227,1) 0%,rgba(147,112,220,1) 40%, #872ce7 70%,  rgba(105, 0, 199, 0.8) 100%);
+
+/* background: linear-gradient(to bottom right, rgba(139,185,255,1) 0%, rgba(146,184,255,1) 20%, rgba(177,164,236,1) 60%, rgba(165,134,227,1) 80%, rgba(147,112,220,1) 100%); */
+
+}
+
+.person-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(100px, 2fr));
+      grid-gap: 1em;
+      margin: 5rem auto;
+      margin-bottom: 0;
+      width: 65%;
+}
+
+.pple-container:before {
+      content: "";
+      display: block;
+      border-bottom: 5vw solid transparent;
+      border-right: 98vw solid #ffffff;
+}
+
+.person {
+      margin: 10px;
+}
+
+.person img {
+      border-radius: 50%;
+      width: 14.5rem;
+      box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07) !important;
+}
+
+.person a {
+      color: white;
+}
+
+.pple-container h1 {
+      padding-top: 3%;
+      text-transform: uppercase;
+      font-family: 'San Francisco-bold';
+      font-size: 60px;
+}
+
+.person h1 {
+      font-size: 3rem;
+}
+
+.pple-container h2 {
+      font-family: 'SF-medium';
+      font-size: 1.5rem;
+}
+
+
+.pple-container i {
+      border-radius: 50%;
+      /* background: white; */
+      font-size: 2rem;
+      margin: .8rem .6rem;
+}
+
+.pple-container i:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+}
+
+footer {
+height: 1%;
+margin-top: 5%;
+padding-bottom: 1%;
+/* width: 75%; */
+/* background-color: white; */
+/* display: flex;
+justify-content: center;
+vertical-align: middle; */
+}
+
+hr {
+height: 3px;
+background-color: white;
+outline: none;
+border: none;
+margin: 0 15% 0 15%;
+border-radius: 25px;
+margin-bottom: 1%;
+opacity: .6;
+}
+
+
+footer{
+      font-family: 'San Francisco-bold';
+      font-size: 2rem;
+}
+
+footer ul, footer div {
+display: block;
+list-style: none;
+}
+
+footer ul li {
+display: inline-block;
+}
+
+footer ul li a {
+font-size: 14px;
+width: 20px;
+height: 20px;
+border-radius: 4rem;
+line-height: 30px;
+color: white;
+}
+
+/*Media Icons Right Bottom */
+
+.media ul {
+      list-style: none;
+      position: fixed;
+      right: 20px;
+      bottom: 0px;
+      padding: 10px 10px;
+}
+
+.media ul li {
+      font-size: 18px;
+      margin: 24px 0;
+}
+
+.media ul li a {
+      color: black !important;
+}
+
