@@ -1,3 +1,12 @@
+document.querySelectorAll('nav li a').forEach(elem => elem.addEventListener("click" , function() {
+    scroll(this.name);
+}));
+
+function scroll(aid){
+    var aTag = $("div[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top-100}, 750);
+}
+
 TweenMax.from(".stuff", .7, {
     opacity: 0,
     y: 20,
@@ -11,7 +20,7 @@ TweenMax.from(".logo", .7, {
     ease: Expo.easeInOut
 });
 
-TweenMax.from(".face", .7, {
+TweenMax.from(".front-img", .7, {
     delay: .3,
     opacity: 0,
     y: 100,
@@ -61,9 +70,9 @@ var typed = new Typed('.element1', {
     startDelay: 2,
     loop: true,
 });
+// $(window).scroll(function(){
+//     var scroll = $(this).scrollTop();
+//     console.log(scroll);
+//   });
 
 
-$(window).scroll(function(){
-    var scroll = $(this).scrollTop();
-    console.log(scroll);
-  });

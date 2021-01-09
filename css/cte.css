@@ -123,61 +123,19 @@ nav ul li a {
       padding-bottom: 15vh !important;
 }
 
-.front-page-container {
-      height: 90vh;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+.learn {
+      padding-top: 10vh;
 }
 
-.front-page-container img {
-      width: 35vw;
+.learn .title {
+    color: #872ce7;
+    font-size: 2.75rem !important;
 }
 
-.intro-words {
-      font-family: "San Francisco-bold";
-      width: 25vw;
-      font-weight: 700;
-      font-size: 3.5vw;
-      position: relative;
-      top: -4.5vh;
-      height: 30vh;
-      border-radius: 10px;
-}
-
-.info {
-      background: white;
-      padding-top: 7.5rem;
-      width: 100%;
-}
-  
-.about-us {
-      /* padding-top: 7.5rem; */
-      text-align: left;
-      width: 50%;
-      /* position: relative;
-      left: 15%; */
-      display: inline-block;
-      padding-bottom: 7.5vh;
-}
-  
-.about-us h1 {
-      text-transform: uppercase;
-      font-family: 'San Francisco-bold';
-      font-size: 4rem !important;
-      margin-bottom: 2%;
-}
-
-.about-us p{
-      line-height: 1.5;
-      font-family: 'SF-medium';
-      font-size: 1.5rem;
-      padding: 2.5vh 0;
-}
 
 .learn h1 {
       font-family: 'San Francisco-bold';
-      font-size: 4rem !important;
+      font-size: 6rem !important;
       color: #872ce7;
       padding-bottom: 3vh;
 }
@@ -185,14 +143,14 @@ nav ul li a {
 .learn h2 {
       font-family: 'San Francisco-bold';
       font-size: 2rem !important;
-      padding-bottom: 1.5vh;
+      padding: 1.5vh 0;
 }
 
 .learn p {
       line-height: 1.5;
       font-family: 'SF-medium';
       font-size: 1.5rem;
-      padding: 2.5vh 0;
+      padding: 1.5rem 0;
 }
 
 .learn a {
@@ -289,68 +247,60 @@ background: linear-gradient(to bottom right,  rgba(165,134,227,1) 0%,rgba(147,11
       cursor: pointer;
 }
 
+
+
 footer {
-height: 1%;
-margin-top: 5%;
-padding-bottom: 1%;
-/* width: 75%; */
-/* background-color: white; */
-/* display: flex;
-justify-content: center;
-vertical-align: middle; */
-}
-
-hr {
-height: 3px;
-background-color: white;
-outline: none;
-border: none;
-margin: 0 15% 0 15%;
-border-radius: 25px;
-margin-bottom: 1%;
-opacity: .6;
-}
-
-
-footer{
+      text-align: center;
+      height: 1%;
+      padding-bottom: 1%;
+      /* width: 75%; */
+      /* background-color: white; */
+      /* display: flex;
+      justify-content: center;
+      vertical-align: middle; */
+  }
+  
+  footer ul li a i {
+      font-size: 2rem;
+      margin: .8rem .6rem;
+  }
+  
+  hr {
+      height: 3px;
+      background-color: black;
+      outline: none;
+      border: none;
+      margin: 0 15% 0 15%;
+      border-radius: 25px;
+      margin-bottom: 1%;
+      opacity: .6;
+  }
+  
+  
+  footer .copyright{
       font-family: 'San Francisco-bold';
       font-size: 2rem;
-}
-
-footer ul, footer div {
-display: block;
-list-style: none;
-}
-
-footer ul li {
-display: inline-block;
-}
-
-footer ul li a {
-font-size: 14px;
-width: 20px;
-height: 20px;
-border-radius: 4rem;
-line-height: 30px;
-color: white;
-}
-
-/*Media Icons Right Bottom */
-
-.media ul {
+  }
+  
+  footer .copyright strong{
+      /* font-family: 'Die Nasty' !important; */
+  }
+  
+  footer ul, footer div {
+      display: block;
       list-style: none;
-      position: fixed;
-      right: 20px;
-      bottom: 0px;
-      padding: 10px 10px;
-}
-
-.media ul li {
-      font-size: 18px;
-      margin: 24px 0;
-}
-
-.media ul li a {
-      color: black !important;
-}
+  }
+  
+  footer ul li {
+      display: inline-block;
+  }
+    
+  footer ul li a {
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
+      border-radius: 4rem;
+      line-height: 30px;
+      color: black;
+  }
 
