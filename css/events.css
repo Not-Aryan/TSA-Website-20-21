@@ -225,3 +225,15 @@ footer {
       color: black;
   }
 
+  .med-link {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      color: gray;
+      font-family: 'San Francisco-bold';
+      font-size: 1rem;
+      font-style: under;
+      background: white;
+      border-radius: 10px;
+      padding: 5px 10px;
+}
